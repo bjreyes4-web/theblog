@@ -56,7 +56,7 @@ body {
 }
 
 .hero-img {
-  width: 100vh;
+  width: auto;
   height: auto;
   object-fit: cover;
   opacity: 0.35;
