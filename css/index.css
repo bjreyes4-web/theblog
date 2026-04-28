@@ -1,3 +1,7 @@
+/* =========================
+   ALL
+========================= */
+
 * {
   margin: 0;
   padding: 0;
@@ -13,20 +17,20 @@ body {
 }
 
 /* =========================
-   TEXT SIZE UPDATED
+   TEXT SIZE 
 ========================= */
 .text-box {
-  font-size: 15px; /* UPDATED */
-  flex: 1; /* UPDATED */
+  font-size: 15px;
+  flex: 1; 
 }
 
 .rating-box p {
-  font-size: 15px; /* UPDATED */
+  font-size: 15px;
 }
 
 .full-text {
   max-width: 1100px;
-  margin: 0 auto; /* THIS centers the divider */
+  margin: 0 auto; 
   padding: 20px 50px;
   font-size: 15px;
   border-left: 2px solid black;
@@ -34,14 +38,13 @@ body {
 }
 
 .text-box {
-  max-width: 600px;   /* UPDATED: prevents super long lines */
-}
+  max-width: 600px;   
 
 /* =========================
-   LAYOUT IMPROVEMENT
+   LAYOUT 
 ========================= */
 .image-box {
-  flex: 1; /* UPDATED */
+  flex: 1; 
 }
 
 /* =========================
@@ -100,26 +103,24 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center; /* UPDATED */
+  text-align: center;
 }
 
-/* UPDATED */
 .hero-text h1 {
   font-size: 120px;
   font-weight: 300;
   color: black;
   font-family: "Rubik Spray Paint";
-  -webkit-text-stroke: 0.5px #d40000; /* thinner stroke */
+  -webkit-text-stroke: 0.5px #d40000;
   margin-bottom: 10px;
 }
 
-/* UPDATED */
 .hero-text h2 {
-  font-size: 32px;       /* slightly smaller */
+  font-size: 32px;     
   font-style: italic;
   font-weight: 800;
   color: #d40000;
-  line-height: 1.2;      /* tighter spacing */
+  line-height: 1.2;   
   margin-top: 0;
 }
 
@@ -130,38 +131,37 @@ body {
   background: #ffeb3b;
   border: 2px solid black;
 
-  max-width: 1100px;   /* UPDATED */
-  margin: 0 auto;      /* UPDATED */
+  max-width: 1100px;   
+  margin: 0 auto;    
 
-  padding: 10px 50px;  /* UPDATED (match other sections) */
+  padding: 10px 50px;
 
   display: flex;
   justify-content: center;
 }
 
 .section-title h3 {
-  font-size: 34px;       /* UPDATED (bigger like logo) */
+  font-size: 34px;      
   font-weight: 900;
-  font-style: italic;    /* UPDATED */
-  color: #2d44d6;        /* UPDATED */
-  text-transform: uppercase; /* UPDATED */
-}
+  font-style: italic;  
+  color: #2d44d6;       
+  text-transform: uppercase;
 
 .two-col {
   display: flex;
   gap: 40px;
   padding: 30px 50px;
 
-  justify-content: center; /* UPDATED */
+  justify-content: center; 
   align-items: flex-start;
 }
 
 /* =========================
-   IMAGES MADE LARGER
+   IMAGES 
 ========================= */
 .image-box img {
   width: 100%;
-  max-width: 450px; /* UPDATED */
+  max-width: 450px; 
   border: 2px solid black;
 }
 
@@ -173,13 +173,13 @@ body {
 
   margin: 40px auto;
 
-  padding-left: 50px;   /* ensure alignment with text */
+  padding-left: 50px;  
   padding-right: 50px;
 }
 
 .photo-grid img {
-  width: 350px; /* UPDATED */
-  height: 350px; /* UPDATED */
+  width: 350px;
+  height: 350px; 
   object-fit: cover;
   border: 2px solid black;
 }
@@ -207,11 +207,10 @@ body {
   color: #999;
 }
 
-/* FIXED HALF STAR */
 .star.half {
   background: linear-gradient(to right, #d40000 50%, #999 50%);
-  -webkit-background-clip: text; /* UPDATED */
-  -webkit-text-fill-color: transparent; /* UPDATED */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* =========================
@@ -250,7 +249,7 @@ body {
 }
 
 /* =========================
-   GLOBAL CONTENT CONTAINER
+   CONTAINER
 ========================= */
 
 .two-col,
