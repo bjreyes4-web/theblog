@@ -7,45 +7,13 @@
 body {
   background: white;
   color: black;
-  line-height: 1.5;
   font-family: "Rubik", sans-serif;
+  line-height: 1.5;
   font-size: medium;
 }
 
 /* =========================
-   TEXT SIZE UPDATED
-========================= */
-.text-box {
-  font-size: 15px; /* UPDATED */
-  flex: 1; /* UPDATED */
-}
-
-.rating-box p {
-  font-size: 15px; /* UPDATED */
-}
-
-.full-text {
-  max-width: 1100px;
-  margin: 0 auto; /* THIS centers the divider */
-  padding: 20px 50px;
-  font-size: 15px;
-  border-left: 2px solid black;
-  border-right: 2px solid black;
-}
-
-.text-box {
-  max-width: 600px;   /* UPDATED: prevents super long lines */
-}
-
-/* =========================
-   LAYOUT IMPROVEMENT
-========================= */
-.image-box {
-  flex: 1; /* UPDATED */
-}
-
-/* =========================
-   TOP BAR
+   TOP BAR (IDENTICAL)
 ========================= */
 .topbar {
   background: #ffeb3b;
@@ -83,7 +51,7 @@ body {
 }
 
 /* =========================
-   HERO
+   HERO (MATCHED)
 ========================= */
 .hero {
   position: relative;
@@ -100,122 +68,123 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center; /* UPDATED */
+  text-align: center;
 }
 
-/* UPDATED */
 .hero-text h1 {
   font-size: 120px;
   font-weight: 300;
   color: black;
   font-family: "Rubik Spray Paint";
-  -webkit-text-stroke: 0.5px #d40000; /* thinner stroke */
+  -webkit-text-stroke: 0.5px #d40000;
   margin-bottom: 10px;
 }
 
-/* UPDATED */
 .hero-text h2 {
-  font-size: 32px;       /* slightly smaller */
+  font-size: 32px;
   font-style: italic;
   font-weight: 800;
   color: #d40000;
-  line-height: 1.2;      /* tighter spacing */
-  margin-top: 0;
+  line-height: 1.2;
 }
 
 /* =========================
-   SECTIONS
+   SECTION TITLE (MATCHED)
 ========================= */
 .section-title {
   background: #ffeb3b;
   border: 2px solid black;
 
-  max-width: 1100px;   /* UPDATED */
-  margin: 0 auto;      /* UPDATED */
+  max-width: 1100px;
+  margin: 0 auto;
 
-  padding: 10px 50px;  /* UPDATED (match other sections) */
+  padding: 10px 50px;
 
   display: flex;
   justify-content: center;
 }
 
 .section-title h3 {
-  font-size: 34px;       /* UPDATED (bigger like logo) */
+  font-size: 34px;
   font-weight: 900;
-  font-style: italic;    /* UPDATED */
-  color: #2d44d6;        /* UPDATED */
-  text-transform: uppercase; /* UPDATED */
+  font-style: italic;
+  color: #2d44d6;
+  text-transform: uppercase;
 }
 
+/* =========================
+   LAYOUT (MATCHED)
+========================= */
 .two-col {
   display: flex;
   gap: 40px;
   padding: 30px 50px;
 
-  justify-content: center; /* UPDATED */
+  justify-content: center;
   align-items: flex-start;
 }
 
-/* =========================
-   IMAGES MADE LARGER
-========================= */
+.image-box {
+  flex: 1;
+}
+
 .image-box img {
   width: 100%;
-  max-width: 450px; /* UPDATED */
+  max-width: 450px;
   border: 2px solid black;
 }
 
-.photo-grid {
+.text-box {
+  flex: 1;
+  max-width: 600px;
+  font-size: 15px;
+}
+
+/* =========================
+   CONNECT SECTION
+========================= */
+.connect {
+  text-align: center;
+  margin: 60px auto;
+}
+
+.connect h3 {
+  font-size: 28px;
+  font-weight: 900;
+  font-style: italic;
+  color: #2d44d6;
+  margin-bottom: 20px;
+}
+
+.socials {
   display: flex;
-  gap: 25px;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-box {
+  width: 150px;
+  height: 150px;
+
+  border: 2px solid black;
+  background: #ffeb3b;
+
+  display: flex;
   justify-content: center;
   align-items: center;
 
-  margin: 40px auto;
-
-  padding-left: 50px;   /* ensure alignment with text */
-  padding-right: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
 }
 
-.photo-grid img {
-  width: 350px; /* UPDATED */
-  height: 350px; /* UPDATED */
-  object-fit: cover;
-  border: 2px solid black;
+.social-box:hover {
+  background: #d40000;
+  color: white;
 }
 
 /* =========================
-   RATING + STARS
-========================= */
-.rating-box {
-  background: #fff9c4;
-  border: 2px solid black;
-  padding: 20px 50px;
-  text-align: center;
-}
-
-.stars {
-  font-size: 50px;
-  letter-spacing: 10px;
-}
-
-.star.filled {
-  color: #d40000;
-}
-
-.star.empty {
-  color: #999;
-}
-
-/* FIXED HALF STAR */
-.star.half {
-  background: linear-gradient(to right, #d40000 50%, #999 50%);
-  -webkit-background-clip: text; /* UPDATED */
-  -webkit-text-fill-color: transparent; /* UPDATED */
-}
-
-/* =========================
-   BACK TO TOP BUTTON
+   BACK TO TOP
 ========================= */
 #backToTop {
   position: fixed;
@@ -250,13 +219,10 @@ body {
 }
 
 /* =========================
-   GLOBAL CONTENT CONTAINER
+   GLOBAL CONTENT CONTAINER (KEY FIX)
 ========================= */
-
 .two-col,
-.full-text,
-.photo-grid,
-.rating-box {
+.connect {
   max-width: 1100px;
   margin: 0 auto;
   padding-left: 50px;
